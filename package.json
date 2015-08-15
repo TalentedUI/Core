@@ -1,0 +1,27 @@
+{
+  "name": "talented-ui.core.js",
+  "version": "1.0.0",
+  "description": "Talented UI Core functions",
+  "main": "talented-ui.core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalentedUI/Core.Js.git"
+  },
+  "keywords": [
+    "talented-ui",
+    "javascript",
+    "components"
+  ],
+  "author": "Salih KARAHAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TalentedUI/Core.Js/issues"
+  },
+  "homepage": "https://github.com/TalentedUI/Core.Js#readme",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
+}
