@@ -9,7 +9,8 @@ module.exports = function(grunt) {
                 + 'Author: <%= pkg.author %> \n'
                 + 'Last Updated: <%= grunt.template.today(new Date()) %>\n'
                 + '*/'
-                + '\n' + '\n'
+                + '\n' + '\n',
+                mangle: false
             },
             core_target: {
                 files: {
