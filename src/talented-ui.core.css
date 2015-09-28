@@ -1,0 +1,43 @@
+body.talented {
+    background-color: lightgray;
+}
+body.talented.mr-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+body.talented .cl {}
+body.talented .cl.fr {
+    float: right;
+}
+body.talented .cl.fl {
+    float: left;
+}
+body.talented .cl.cl-max-12 {
+    max-width: 100%;
+    background-color: lightgreen;
+}
+body.talented .cl.cl-12 {
+    width: 100%;
+    background-color: lightgreen;
+}
+body.talented .cl.cl-min-12 {
+    min-width: 100%;
+    background-color: lightgreen;
+}
+body.talented .cl.cl-max-8 {
+    max-width: 66.6%;
+    background-color: lightgreen;
+}
+body.talented .cl.cl-8 {
+    width: 66.6%;
+    background-color: lightgreen;
+}
+body.talented .cl.cl-min-8 {
+    min-width: 66.6%;
+    background-color: lightgreen;
+}
+body.talented .cl.cl-4 {
+    /*max-width: 33.3%;*/
+    width: 33.3%;
+    background-color: lightgreen;
+}
