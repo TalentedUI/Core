@@ -8,5 +8,5 @@ install:
     - npm install grunt-contrib-uglify --save-dev
     - npm install --save-dev grunt-sass
     - npm install grunt-contrib-sass --save-dev
-    
+    - npm install grunt-contrib-watch --save-dev
 script: grunt build
