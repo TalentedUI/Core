@@ -4,12 +4,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
-                banner: '/*\n'
-                + 'Name: <%= pkg.name %>  - Version: <%= pkg.version %> \n'
-                + 'Author: <%= pkg.author %> \n'
-                + 'Last Updated: <%= grunt.template.today(new Date()) %>\n'
-                + '*/'
-                + '\n' + '\n',
+                banner: '/*\n' + 'Name: <%= pkg.name %>  - Version: <%= pkg.version %> \n' + 'Author: <%= pkg.author %> \n' + 'Last Updated: <%= grunt.template.today(new Date()) %>\n' + '*/' + '\n' + '\n',
                 mangle: false
             },
             core_target: {
@@ -20,10 +15,31 @@ module.exports = function(grunt) {
                     ]
                 }
             }
+        },
+        sass: {
+            option:{
+                sourceMap: true
+            },
+            dist: {
+                files: {
+                    'build/talented-ui.core.css': 'src/sass/talented-ui.core.scss'
+                }
+            }
+        },
+        watch: {
+            css: {
+                files: '**/*.scss',
+                tasks: ['sass']
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('build', ['uglify']);
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('uglify-js', ['uglify']);
+    grunt.registerTask('compile-sass',['sass']);
+    grunt.registerTask('build',['uglify','sass']);
 
 };

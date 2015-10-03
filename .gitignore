@@ -1,8 +1,10 @@
 # ide
 ./idea/
 
-#
+# development result output files and directories
 node_modules/
 build/
+.sass-cache/
+
 #
 test/

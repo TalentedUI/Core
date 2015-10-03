@@ -1,0 +1,11 @@
+
+$default-text-body-font: Helvetica, arial;
+$default-text-body-size: 14px;
+
+//reset css
+@import "_reset";
+
+
+body .col{
+    backgrount-color: gray;
+}
