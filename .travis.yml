@@ -6,6 +6,7 @@ before_install:
     - npm install -g grunt-cli
 install:
     - npm install grunt-contrib-uglify --save-dev
+    - npm install --save-dev grunt-sass
     - npm install grunt-contrib-sass --save-dev
-
+    
 script: grunt build
